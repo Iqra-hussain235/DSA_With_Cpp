@@ -61,5 +61,14 @@
     "*.ndjson": "jsonl",
     "*.dbclient-js": "javascript",
     "iostream": "cpp"
+  },
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
   }
 }
